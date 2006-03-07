@@ -1,0 +1,26 @@
+module muondtdigi = DTDigitizer {
+	
+	   bool onlyMuHits = false
+           bool interpolate = true
+  	   untracked bool debug = false 
+  
+  	   # Velocity of signal propagation along the wire (cm/ns)
+  	   # For the default value
+  	   # cfr. CMS-IN 2000-021:   (2.56+-0.17)x1e8 m/s
+  	   #      CMS NOTE 2003-17:  (0.244)  m/ns
+  		double vPropWire = 24.4
+
+  	   # Dead time for signals on the same wire (number from M. Pegoraro)  
+  		double deadTime = 150
+  
+       	   # further configurable smearing
+  		double Smearing = 3.
+
+           # The Synchronization Algo Name. Algos Type= [DTDigiSyncTOFCorr,DTDigiSyncFromTable]
+		string SyncName = 'DTDigiSyncTOFCorr'
+	   # Its parameters
+             	PSet pset = {
+		   	      double offset = 500
+  		   	      int32 TOFCorrection = 2
+		            }
+         }
