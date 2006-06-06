@@ -6,7 +6,7 @@ module muondtdigi = DTDigitizer {
 	
 	   # ideal model. Used for debug.
 	   # It uses constant drift velocity and it hasn't any external delay 	
-	   bool IdealModel = true
+	   bool IdealModel = false
 	   # constant drift velocity for the IdealModel (cm/ns)
            double IdealModelConstantDriftVelocity = 0.0055	  
 
