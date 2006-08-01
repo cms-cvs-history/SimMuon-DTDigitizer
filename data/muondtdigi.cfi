@@ -1,4 +1,4 @@
-module muondtdigi = DTDigitizer {
+module muonDTDigis = DTDigitizer {
 	
 	   bool onlyMuHits = false
            bool interpolate = true
