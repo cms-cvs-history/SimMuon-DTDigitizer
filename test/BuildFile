@@ -17,6 +17,6 @@
   <use name=Geometry/DTGeometry>
   <use name=Geometry/Records>
   <use name=DataFormats/DTDigi>
-  <flags SEAL_PLUGIN_NAME="DTDigiAnalyzer">
+  <flags SEAL_PLUGIN_NAME="testDTDigiAnalyzer">
 </library>
 
