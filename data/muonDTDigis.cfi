@@ -20,7 +20,7 @@ module muonDTDigis = DTDigitizer {
   		double deadTime = 150
   
        	   # further configurable smearing
-  		double Smearing = 3.
+  		double Smearing = 2.4
 
            # The Synchronization Algo Name. Algos Type= [DTDigiSyncTOFCorr,DTDigiSyncFromTable]
 		string SyncName = 'DTDigiSyncTOFCorr'
