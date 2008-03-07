@@ -29,4 +29,10 @@ module muonDTDigis = DTDigitizer {
 		   	      double offset = 500
   		   	      int32 TOFCorrection = 2
 		            }
+
+           # configure the creation of Digi-Sim links:	
+           #   one-to-one correspondence between digis and SimHits (MultipleLinks=false)
+           #   or association of SimHits within a given time window (of the order of the resolution, in ns)
+                 bool MultipleLinks = true
+                 double LinksTimeWindow = 10.
          }
