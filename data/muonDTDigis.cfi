@@ -4,6 +4,9 @@ module simMuonDTDigis = DTDigitizer {
            bool interpolate = true
   	   untracked bool debug = false 
 	
+           #Name of Collection used for create the XF 
+           string InputCollection = 'g4SimHitsMuonDTHits'
+
 	   # ideal model. Used for debug.
 	   # It uses constant drift velocity and it hasn't any external delay 	
 	   bool IdealModel = false
