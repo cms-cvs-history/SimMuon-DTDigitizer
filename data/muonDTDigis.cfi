@@ -3,7 +3,8 @@ module simMuonDTDigis = DTDigitizer {
 	   bool onlyMuHits = false
            bool interpolate = true
   	   untracked bool debug = false 
-	
+	   string GeometryType = 'idealForDigi'	
+
            #Name of Collection used for create the XF 
            string InputCollection = 'g4SimHitsMuonDTHits'
 
